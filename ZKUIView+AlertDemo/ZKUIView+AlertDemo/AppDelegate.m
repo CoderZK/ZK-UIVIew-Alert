@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  ZKUIView+AlertDemo
 //
-//  Created by lanou on 16/6/23.
-//  Copyright © 2016年 lanou. All rights reserved.
+//  Created by ZK on 16/6/23.
+//  Copyright © 2016年 ZK. All rights reserved.
 //
 
 #import "AppDelegate.h"

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,41 +18,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M53-ii-Ed3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M53-ii-Ed3">
                                 <rect key="frame" x="31" y="42" width="105" height="30"/>
                                 <state key="normal" title="显示提醒枚举定"/>
                                 <connections>
                                     <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KdI-TF-IEj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lC-cB-Zhd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lC-cB-Zhd">
                                 <rect key="frame" x="46" y="300" width="60" height="30"/>
                                 <state key="normal" title="显示菊花"/>
                                 <connections>
                                     <action selector="showFlos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjS-qs-oSI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1r-o2-LSH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1r-o2-LSH">
                                 <rect key="frame" x="31" y="104" width="120" height="30"/>
                                 <state key="normal" title="显示提醒位置自定"/>
                                 <connections>
                                     <action selector="showForYou:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEb-up-JMj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbQ-fI-MUP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbQ-fI-MUP">
                                 <rect key="frame" x="31" y="196" width="101" height="30"/>
                                 <state key="normal" title="警告(在状态栏)"/>
                                 <connections>
                                     <action selector="top:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rl5-zA-w3h"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="感谢您的支持,如果你在使用过程中遇到任何问题,请联系542283618@qq.com 我们会尽力完善我们的内容,谢谢!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLY-nk-CbT">
+                                <rect key="frame" x="57" y="476" width="271" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="n8l-wO-82Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MLY-nk-CbT" secondAttribute="bottom" constant="92" id="2K0-Z9-NAg"/>
+                            <constraint firstItem="M53-ii-Ed3" firstAttribute="leading" secondItem="O1r-o2-LSH" secondAttribute="leading" id="6MN-ga-dw0"/>
+                            <constraint firstItem="1lC-cB-Zhd" firstAttribute="top" secondItem="bbQ-fI-MUP" secondAttribute="bottom" constant="74" id="I1b-F6-B7C"/>
+                            <constraint firstItem="1lC-cB-Zhd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="IBL-Ph-zPO"/>
+                            <constraint firstItem="MLY-nk-CbT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="KBQ-y9-icl"/>
+                            <constraint firstItem="O1r-o2-LSH" firstAttribute="leading" secondItem="bbQ-fI-MUP" secondAttribute="leading" id="KJs-hi-xpS"/>
+                            <constraint firstItem="M53-ii-Ed3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="Yom-b3-JK1"/>
+                            <constraint firstItem="MLY-nk-CbT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5" id="cvQ-NL-QpW"/>
+                            <constraint firstItem="M53-ii-Ed3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="ebd-aS-riJ"/>
+                            <constraint firstItem="bbQ-fI-MUP" firstAttribute="top" secondItem="O1r-o2-LSH" secondAttribute="bottom" constant="62" id="oeT-Hu-fX1"/>
+                            <constraint firstItem="O1r-o2-LSH" firstAttribute="top" secondItem="M53-ii-Ed3" secondAttribute="bottom" constant="32" id="x2U-PS-jGI"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="339.5" y="327.5"/>
         </scene>
     </scenes>
 </document>
